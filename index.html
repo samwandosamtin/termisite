@@ -6,6 +6,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title></title>
+ 
+  
 </head>
 <body style="background-color: rgb(60, 60, 60);">
 <div class="window">
@@ -19,14 +21,32 @@
   </div>
  
   <div spellcheck="false" id="terminal">
-    <p spellcheck="false" id="time"> </p>
+    <div spellcheck="false" id="time"> </div>
     <script>
 
 	const d = new Date();
-document.getElementById("time").innerHTML = " Son giriş :  " +d.toLocaleString()  ;
+document.getElementById("time").innerHTML = " Son giriş :  " +d.toLocaleString();
 </script>
-    <p spellcheck="false" contenteditable >enginbalikci@termisiteCV ~ server$ hoş geldiniz;</p>
+
+    <!--<textarea readonly spellcheck="false" style="color: white; font-family: 'Open Sans', sans-serif;" id="giris"></textarea><br>
+
+    <script type="text/javascript">
+      var i = 0;
+      var giristext = 'lorem ipsum dolor sit amet';
+      var speed = 133333333;
+      function yazı() {
+        if (i < giristext.length) {
+          document.getElementById("giris").innerHTML += giristext.charAt(i);
+          i++;
+          setTimeout(yazı, speed);
+        }
+      }
+  </script>
    
+    
+     -->
+  <textarea width="100%" spellcheck="false" readonly style="color: white; width: 100%; height: 40%;" id="giris"></textarea>
+   <p id="ehe" spellcheck="false" contenteditable ></p>
     
     
 </div>

@@ -40,6 +40,7 @@ body {
       line-height: 1;
       font-family: 'Open Sans', sans-serif;
       text-align: center;
+
     }
 
     .buttons {
@@ -83,7 +84,7 @@ body {
     flex: 1 1 auto;
     background: #1f2124;}
     
-    #terminal p {
+    #terminal #time, p {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -97,6 +98,15 @@ body {
       
     
   
+textarea, input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+
+  }
 
 
 ::-webkit-scrollbar {
