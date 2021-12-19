@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Courier+Prime&display=swap');
+
 body {
   height: 100vh;
 
@@ -13,11 +14,11 @@ body {
 }
 
 .window {
-  margin: 4em;
-  width: 800px;
-  height: 600px;
+  margin: 1em;
+  width: 80%;
+  height: 70%;
   overflow: hidden;
- background-color: #1f2124;
+  background-color: #333;
   display: flex;
   flex-direction: column;
 
@@ -26,7 +27,7 @@ body {
   border-radius: .5em;}
 
   .window .bar {
-    padding: .5em;
+    padding: .6em;
     flex: 0 0 auto;
     display: flex;
     background: linear-gradient(to bottom, #eaeaea, #d2d2d2);
@@ -38,7 +39,8 @@ body {
       display: inline-block;
       flex: 1 1 auto;
       line-height: 1;
-      font-family: 'Open Sans', sans-serif;
+      font-size: .9em;
+      font-family: 'Courier Prime', monospace;
       text-align: center;
 
     }
@@ -75,42 +77,67 @@ body {
         .button:nth-child(3) {
           background: #23c944;
         }
-      
+   
 
   #terminal {
     padding: .4em;
     max-height: 100%;
     overflow-y: auto;
     flex: 1 1 auto;
-    background: #1f2124;}
+    background: #1d2124;}
     
-    #terminal #time, p {
+     .typed2{
       margin: 0;
-      padding: 0;
+      padding: 0px;
       width: 100%;
       height: 10%;
-      display: block;
-      font-family: 'Open Sans', sans-serif;
+      display: inline;
+      font-family: 'Courier Prime', sans-serif;
+      font-size: .9em;
       outline: none;
       border: none;
       background: transparent;
-      color: whitesmoke ;}
-      
-    
-  
-textarea, input{
-    border: none;
-    background-color: transparent;
-    resize: none;
-    outline: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+      color: floralwhite ;}
 
+a{
+  text-decoration: none;
+  color: yellow;
+}
+   .tıklaman {
+   pointer-events: none;
+   cursor: default;
+   text-decoration: none;
+   color: coral;
+
+}
+  .unvan{
+    color: aquamarine;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
   }
 
+.red{
+  pointer-events: none;
+   cursor: default;
+   text-decoration: none;
+   color: red;
+}
+.blue{
+  pointer-events: none;
+   cursor: default;
+   text-decoration: none;
+   color: yellowgreen;
+}
+
+h3{
+  font-size: .9em;
+}
 
 ::-webkit-scrollbar {
-  width: .3em;
+  width: 0;
+  background: transparent;
+  overflow-y: scroll;
 }
  
 ::-webkit-scrollbar-thumb {
@@ -118,3 +145,4 @@ textarea, input{
   background: #eaeaea;
   -webkit-box-shadow: inset 0 0 .1em rgba(0, 0, 0, 0.5); 
 }
+

@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<title></title>
- 
-  
+	<title></title> 
+
 </head>
-<body style="background-color: rgb(60, 60, 60);">
+
+<body>
 <div class="window">
   <div class="bar">
     <div class="buttons">
@@ -20,42 +20,59 @@
     <span spellcheck="false" class="title">termisite-CV@enginbalikci</span>
   </div>
  
-  <div spellcheck="false" id="terminal">
-    <div spellcheck="false" id="time"> </div>
+  
+<!--
     <script>
-
 	const d = new Date();
-document.getElementById("time").innerHTML = " Son giriş :  " +d.toLocaleString();
+document.getElementById("terminal").innerHTML = " Son giriş :  " +d.toLocaleString();
 </script>
+-->
+  <div width="100%" spellcheck="false" readonly style="color: white; width: 100%; height: 100%;" id="giris">
+    
 
-    <!--<textarea readonly spellcheck="false" style="color: white; font-family: 'Open Sans', sans-serif;" id="giris"></textarea><br>
+<span class="typed2"></span><br>
 
-    <script type="text/javascript">
-      var i = 0;
-      var giristext = 'lorem ipsum dolor sit amet';
-      var speed = 133333333;
-      function yazı() {
-        if (i < giristext.length) {
-          document.getElementById("giris").innerHTML += giristext.charAt(i);
-          i++;
-          setTimeout(yazı, speed);
-        }
-      }
-  </script>
-   
-    
-     -->
-  <textarea width="100%" spellcheck="false" readonly style="color: white; width: 100%; height: 40%;" id="giris"></textarea>
-   <p id="ehe" spellcheck="false" contenteditable ></p>
-    
-    
+<div id="typed-strings"> <p> <a href="" class="tıklaman">enginbalikci@termisiteCV</a>:<a href="" class="blue">~</a> $ cd github.com/samwandosamtin/termisite <br>
+  ^1000
+  <a href="" class="tıklaman">enginbalikci@termisiteCV</a>:<a href="" class="blue">~</a> $  cat özgeçmiş.txt <br>^1000
+
+   <a href="" class="tıklaman">`enginbalikci@termisiteCV</a>:<a href="" class="blue">~ </a>$ <b style="color: yellow;"> おかいらなさい・</b> Uğradığınız için teşekkürler.`^2000 <br> 
+
+
+  <br> İsmim Engin Balıkçı. <br> <br> Ege Üniversitesi BÖTE bölümünü üçüncülük ile bitirmiş <a href="" class="unvan">Bilgisayar Öğretmeni</a>, <a href="" class="unvan">İllüstrasyonist</a> ve <a href="" class="unvan">Jr. yazılımcıyım.</a> <br> <br> Sürekli projeler geliştirmeyi, piyasanın ilerisinde ürünler üretmeyi ve teknolojinin kurdu olmaya bayılıyorum. Arduino ve mbot projeleri geliştirmek, donanımlar üzerinde bir nevi karabüyü yapmak en büyük tutkumdur. <br> <br> Hoşlandığım şeyler arasında semi-pro olarak badminton oynamak, balık tutmak ve manga okumak var. Birde bilgisayarlarla içli dışlı olmak var... <br> <br> Daha önce freelance olarak mysql, php kullanarak admin panelleri yazdım. Bir çok ulusal sempozyumun hem grafik(afiş, yaka kartı, giyim vb.) hem web tasarımclığını üstlendim. Çoklu ortam tasarımlarına uygun olarak eğitim içerikleri(animasyon, soru görselleştirme vb.) ve sınırsız sticker ürettim. <br> <br> Hakkımda kısaca bilmeniz gereken şeylerden birisi de bilgisayarlara daha spesifik olmak gerekirse donanımlara aşık olduğumdur. Daha fazlasını bilmek isterseniz portfolioma <a href="">"buradan" </a>ulaşabilirsiniz.<br> <br> Üzerinde çalıştığım ve bitirdiğim projeleri zamanla GitHub profilime taşıyacağım. Göz atmak isterseniz <a href="www.github.com/samwandosamtin">"GitHub".</a><br> <br> Benim diğer profillerime de gidebilirsiniz. <br> <a href="">instagram.</a> <br> <a href="">Twitter</a> <br> <br> İş teklifleri için sıkça kontrol ettiğim <a href="mailto:baybalikci@outlook.com">"mail adresime"</a> e-posta atabilirsiniz. <br><br><b style="color: yellow;">いってらっしゃい</b>, Görüşmek üzere... 
+
+
+
+
+
+
+
+
+
+ </p>
+
 </div>
-</div>
 
+</div>
+  </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
-	<script src="https://iamdanfox.github.io/typetype/jquery.typetype.min.js" ></script>
-
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="typed.js"></script>
+<script type="text/javascript">
+  
+
+   var typed = new Typed('.typed2', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 10,
+    loop: false,
+    backSpeed: 1,
+    fadeOut: false,
+    cursorChar :"_",
+    
+
+    
+    
+  });
+</script>
 </html>
