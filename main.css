@@ -116,6 +116,17 @@ a{
     cursor: default;
     text-decoration: none;
   }
+    .insta{
+    background: -webkit-linear-gradient(#F58529, #FEDA77, #DD2A7B,#8134AF,#515BD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+    text-decoration: none;
+  }
+  .twitter{
+    text-decoration: none;
+    color: #00acee;
+  }
 
 .red{
   pointer-events: none;
@@ -129,10 +140,13 @@ a{
    text-decoration: none;
    color: yellowgreen;
 }
-
-h3{
-  font-size: .9em;
+.deviantart{
+  
+   
+   text-decoration: none;
+   color: limegreen;
 }
+
 
 ::-webkit-scrollbar {
   width: 0;
