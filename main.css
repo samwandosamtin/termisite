@@ -2,7 +2,7 @@
 
 body {
   height: 100vh;
-
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
   margin: 1em;
   width: 80%;
   height: 70%;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,7 @@ body {
     padding: .6em;
     flex: 0 0 auto;
     display: flex;
+    overflow-y: scroll;
     background: linear-gradient(to bottom, #eaeaea, #d2d2d2);
     border-bottom: 1px solid #7d7d7d;
     color: #4c4c4c;}
@@ -78,13 +79,6 @@ body {
           background: #23c944;
         }
    
-
-  #terminal {
-    padding: .4em;
-    max-height: 100%;
-    overflow-y: auto;
-    flex: 1 1 auto;
-    background: #1d2124;}
     
      .typed2{
       margin: 0;
